@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class='container'>
+<div class="p-3 mb-2 bg-secondary text-white">
+
+<h1>Enter the SMS:</h1>
+
+<form action = '/predict' method="POST">
+
+	<div class="form-floating">
+	<textarea id='sms' class="form-control" name='sms' style="height: 100px"></textarea>
+	<br>
+</div>
+
+	<input type='submit' class="btn btn-primary" value='Check'>
+
+</form>
+
+<p><b>Note: Enter the sms text and click on Submit.</b></p>
+</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<div class='container'>
+<div class="p-3 mb-2 bg-secondary text-white">
+
+{% if 1 in result %}
+	<h1><b> It's a Spam message</b></h1>
+{% else %}
+	<h1><b> It's a Real message</b></h1>
+{% endif %}
+</div>
+</div>
+
+{% endblock %}
